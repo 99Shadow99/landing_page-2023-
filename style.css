@@ -1,0 +1,178 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Gilroy";
+   }
+   html,body{
+       height: 100%;
+       width: 100%;
+   }
+
+#main{
+width: 100%;
+height: 100vh;
+display: flex;
+}
+#left{
+  
+    width: 50%; 
+    height: 100%;
+    background-color: aqua;
+}
+#left img{
+
+  
+height: 100%;
+width: 100%; 
+object-fit: cover ;
+object-position: 0% 29%;
+}
+#right{
+   
+    height: 100%;
+    width: 50%; 
+    background-color: black;
+}
+#right video{
+
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    object-position: 0% 26%;
+}
+#black{
+    position: absolute;
+    top: 0;
+    left: 0;
+ background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: .3;  
+}
+
+#nav1{
+position: relative;
+width: 100%; 
+position: absolute;
+z-index: 33;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 15px 25px;
+}
+#name h1{
+    letter-spacing: 10px;
+    font-size: 25px;
+font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+    }
+
+
+#info{
+z-index: 999;
+    width: 500px;
+    display: flex;
+justify-content: space-between;
+padding-right: 2%;
+
+ 
+    align-items: center;
+}
+#info a{
+    color: #fff;
+   text-decoration: none; 
+   text-transform: uppercase;
+font-size: .9vw;
+
+}
+#info i{
+ color: #fff;
+}
+
+#icon {
+  display: flex;
+  gap: 20px;
+}
+#icon  i{
+  color: #fff;
+  }
+
+
+
+#nav1:hover{
+background-color: #fff;
+}
+
+
+#nav1:hover #name h1{
+    color: black;
+    }
+    #nav1:hover #info a{
+        color: rgb(0, 0, 0);
+        }
+        #nav1:hover #info i{
+            color: rgb(0, 0, 0);
+            }
+            #nav1:hover #icon  i{
+                color: #000000;
+                }
+
+#hleft,#hright{
+
+    width: 50%;
+    position: absolute;
+    left: 0%;
+    top: 80%;
+display:flex ;
+justify-content: space-between;
+padding: 0 30px;
+align-items: center;
+
+}
+
+#hright{
+
+    
+    left: 50%;
+
+}
+#hleft h2,#hright h2{
+
+
+    font-size: 27px;
+    font-weight: 500;
+color: #fff;
+}
+
+#hleft h5 ,#hright h5{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+color: #fff;
+}
+#hleft button,#hright button{
+    margin-top: 44px;
+position: relative;
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 200;
+}
+#hleft button::after,#hright button::after{
+content: "";
+position: absolute;
+    width: 100%;
+    height: 1px;
+bottom: 0%;
+background-color: antiquewhite;
+right: 0%;
+}
+#hleft button:hover::after,#hright button:hover::after{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) .8s;
+    width: 0%;
+    height: 0%;
+}
